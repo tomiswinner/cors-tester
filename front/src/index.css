@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  background: #f8f9fa;
+}
+
+h1 {
+  color: #333;
+}
+
+.section {
+  margin: 16px 0;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.section h3 {
+  margin: 0 0 8px 0;
+}
+
+.section p {
+  margin: 0 0 12px 0;
+  color: #666;
+  font-size: 14px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+input[type="number"] {
+  width: 70px;
+}
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+pre {
+  background: #1e1e1e;
+  color: #d4d4d4;
+  padding: 16px;
+  border-radius: 4px;
+  overflow: auto;
+  max-height: 300px;
+  font-size: 13px;
+}
+
+.method {
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.get { color: #28a745; }
+.post { color: #007bff; }
+.put { color: #fd7e14; }
+.patch { color: #6f42c1; }
+.delete { color: #dc3545; }
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.checkbox-label input {
+  width: 16px;
+  height: 16px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* CORS Config Panel */
+.cors-config {
+  background: #fffbeb;
+  border-color: #f59e0b;
+}
+
+.cors-config h3 {
+  color: #b45309;
+}
+
+.config-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.config-row label:first-child {
+  min-width: 220px;
+  font-size: 13px;
+  color: #666;
+}
+
+.config-row input[type="text"] {
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.config-row .hint {
+  font-size: 12px;
+  color: #999;
+}
+
+.config-buttons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button.secondary {
+  background: #6c757d;
+}
+
+button.secondary:hover {
+  background: #5a6268;
+}
+

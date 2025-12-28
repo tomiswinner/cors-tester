@@ -1,0 +1,20 @@
+services:
+  back:
+    build: ./back
+    image: tak-cors-test-back:local
+    ports:
+      - "8080:8080"
+    tty: true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+
+  front:
+    build: ./front
+    image: tak-cors-test-front:local
+    ports:
+      - "3000:3000"
+    depends_on:
+      - back
