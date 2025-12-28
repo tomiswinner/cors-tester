@@ -35,6 +35,14 @@ make down    # 停止
 - `allowMethods` — Access-Control-Allow-Methods
 - `allowHeaders` — Access-Control-Allow-Headers
 
+### テストデータ (items)
+メモリ上に保持されるテストデータを CRUD 操作可能:
+- `GET /api/items` — 全件取得
+- `POST /api/items` — 新規作成
+- `PUT /api/items/:id` — 全置換
+- `PATCH /api/items/:id` — 部分更新
+- `DELETE /api/items/:id` — 削除
+
 本来ブラウザによりコンテンツやヘッダーがキャッシュされるが、このアプリではキャッシュを無視してリクエストを送信する。
 
 ---
